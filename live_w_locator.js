@@ -234,7 +234,7 @@ $(function() {
                     width: {min: 640},
                     height: {min: 480},
                     facingMode: "environment",
-                    aspectRatio: {min: 1, max: 100}
+                    aspectRatio: {min: 1, max: 2}
                 }
             },
             locator: {
@@ -246,6 +246,26 @@ $(function() {
             decoder: {
                 readers : [{
                     format: "code_128_reader",
+                    config: {}
+                },
+                {
+                    format: 'ean_reader',
+                    config: {}
+                },
+                {
+                    format: 'ean_8_reader',
+                    config: {}
+                },
+                {
+                    format: 'code_39_reader',
+                    config: {}
+                },
+                {
+                    format: 'code_39_vin_reader',
+                    config: {}
+                },
+                {
+                    format: 'code_93_reader',
                     config: {}
                 }]
             },
