@@ -234,7 +234,7 @@ $(function() {
                     width: {min: 640},
                     height: {min: 480},
                     facingMode: "environment",
-                    aspectRatio: {min: 1, max: 100}
+                    aspectRatio: {min: 1, max: 3}
                 }
             },
             locator: {
