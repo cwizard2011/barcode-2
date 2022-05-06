@@ -44,7 +44,7 @@ $(function() {
             if (typeof track.getCapabilities === 'function') {
                 capabilities = track.getCapabilities();
             }
-            alert(capabilities.zoom)
+            alert('This is ne new one')
             this.applySettingsVisibility('zoom', capabilities.zoom);
             this.applySettingsVisibility('torch', capabilities.torch);
         },
@@ -235,7 +235,7 @@ $(function() {
                     width: {min: 640},
                     height: {min: 480},
                     facingMode: "environment",
-                    aspectRatio: {min: 1, max: 2}
+                    aspectRatio: {min: 1, max: 100}
                 }
             },
             locator: {
