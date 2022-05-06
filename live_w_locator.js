@@ -44,6 +44,7 @@ $(function() {
             if (typeof track.getCapabilities === 'function') {
                 capabilities = track.getCapabilities();
             }
+            alert(capabilities.zoom)
             this.applySettingsVisibility('zoom', capabilities.zoom);
             this.applySettingsVisibility('torch', capabilities.torch);
         },
